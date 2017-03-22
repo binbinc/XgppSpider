@@ -47,6 +47,6 @@ class XgppDownload():
             for file in zipFile.namelist():
                 zipFile.extract(file)
             zipFile.close()
-
+            os.remove(fileName)
 
 
